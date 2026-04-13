@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+int weight;
+float height,BodyMassIndex;
+scanf("%d%f",&weight,&height);
+if(weight<=30||weight>=811||height<=1.49||height>=1.73)
+printf("Invalid Inputs");
+else
+{
+BodyMassIndex=weight/(height*height);
+printf("%.2f",BodyMassIndex);
+}
+return 0;
+}
