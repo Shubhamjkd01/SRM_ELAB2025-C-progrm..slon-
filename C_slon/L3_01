@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+int hno,pincode,employeeID,areacode;
+scanf("%d%d%d%d",&hno,&pincode,&employeeID,&areacode);
+if (hno < 0 || hno > 999||pincode<100000||pincode>999999||
+employeeID<1000||employeeID>9999||areacode<0||areacode>999) {
+printf("Invalid Input");
+}
+else {
+printf("Employee ID: %d\nArea Code: %d\nHouse Number: %d\nPin code: %d",
+employeeID,areacode,hno,pincode);
+}
+return 0;
+}

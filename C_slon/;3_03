@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+int price = 185, loaves, regularprice;
+float discounted, payable;
+scanf("%d",&loaves);
+if(loaves<25)
+printf("Invalid input");
+else if(loaves>150)
+printf("Invalid input");
+else
+{
+regularprice = loaves * price; discounted = regularprice * 0.60f;
+payable = regularprice - discounted;
+printf("Regular Price=%d\nAmount Discounted=%.2f\nAmount to be Paid After Discount=%.2f",regularprice,discounted,payable);
+}
+return 0;}
